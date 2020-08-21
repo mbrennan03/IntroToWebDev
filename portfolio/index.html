@@ -7,6 +7,12 @@
 <html lang="en">
     <head>
         <title>Megan Brennan's Portfolio</title>
+        <link href="teststyles.css" rel="stylesheet" type="text/css"/>
+        <style>
+            header {
+                background-color: darkgray;
+            }
+        </style>
     </head>
 
     <body>
@@ -14,16 +20,16 @@
             <h1>Portfolio for Megan Brennan</h1>
         </header>
 
-        <nav>
-            <hr/>
+        <nav class="border">
+            <hr style="border: thin dotted red;"/>
             <p><a href="projects.html">Projects</a></p>
             <p><a href="contact.html">Contact</a></p>
             <p><a href="testimonials.html">Testimonials</a></p>
-            <hr/>
+            <hr style="width: 50%; border: 2px solid blueviolet;"/>
         </nav>
 
         <section>
-            <article id="about-me">
+            <article id="about" class="border">
                 <h2><em>About Me</em></h2>
                 <img src="images/portrait.PNG" alt="Portrait of Megan Brennan"/>
                 <p>I am a <span style="background-color: lightblue; border: thin solid darkblue;">
@@ -36,7 +42,7 @@
                 </p>
             </article>
 
-            <article id="experiences">
+            <article id="experience">
                 <h2><em>Past Experiences</em></h2>
                 <img src="images/beaker.jpg" alt="Graphene solution in beaker"/>
                 <table>
@@ -104,7 +110,7 @@
 
         </section>
 
-        <footer>
+        <footer style="background-color: fuchsia">
             <hr/>
             <p>&copy; 2020 Megan Brennan. All rights reserved.</p>
         </footer>
