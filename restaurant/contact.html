@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Name: Megan Brennan
+    Date Created: August 21, 2020
+    Last Updated:
+-->
+<html lang="en">
+    <head>
+        <title>Megan's Restaurant</title>
+    </head>
+
+    <body>
+        <header>
+            <h2>Contact Us</h2>
+            <hr/>
+            <h1>Megan's Restaurant</h1>
+        </header>
+
+        <nav>
+            <hr/>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="menu.html">Menu</a></p>
+            <p><a href="contact.html">Contact</a></p>
+            <hr/>
+        </nav>
+
+        <section>
+            <form action="submit.html" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br />
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br />
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br />
+
+                <label for="reason">Reason for Inquiry:</label>
+                <select id="reason" name="reason">
+                    <option value="catering" selected>Catering</option>
+                    <option value="party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select><br />
+
+                <label for="info">Additional Information:</label>
+                <textarea id="info" name="info"></textarea><br />
+
+                <fieldset>
+                    <legend>Have you been to the restaurant?</legend>
+                    <input type="radio" id="choice1" name="visited" value="yes">
+                    <label for="choice1">Yes</label>
+                    <input type="radio" id="choice2" name="visited" value="no">
+                    <label for="choice2">No</label><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Best days to contact you:</legend>
+                    <input type="checkbox" id="monday" name="day" value="monday">
+                    <label for="monday">M</label>
+                    <input type="checkbox" id="tuesday" name="day" value="tuesday">
+                    <label for="tuesday">T</label>
+                    <input type="checkbox" id="wednesday" name="day" value="wednesday">
+                    <label for="wednesday">W</label>
+                    <input type="checkbox" id="thursday" name="day" value="thursday">
+                    <label for="thursday">R</label>
+                    <input type="checkbox" id="friday" name="day" value="friday">
+                    <label for="friday">F</label>
+                </fieldset>
+
+                <input type="submit" name="submit" value="Send Request">
+            </form>
+        </section>
+
+        <footer>
+            <hr/>
+            <p>222 45th St, St. Cloud MN 56303</p>
+            <p>(320) 123-4568</p>
+            <hr/>
+        </footer>
+    </body>
+</html>
