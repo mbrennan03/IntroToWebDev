@@ -2,15 +2,36 @@
 <!--
     Name: Megan Brennan
     Date Created: August 20, 2020
-    Most recent revision: August 21, 2020
+    Most recent revision: August 22, 2020
 -->
 <html lang="en">
     <head>
         <title>Megan Brennan's Portfolio</title>
         <link href="teststyles.css" rel="stylesheet" type="text/css"/>
         <style>
-            header {
-                background-color: darkgray;
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            table, th, td {
+                border: 1px solid #0d1f2d;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            table {
+                width: 90%;
+                margin: auto;
+            }
+            tr {
+                height: 30px;
+            }
+            th {
+                background-color: #546a7b;
+                color: #f2eded;
+            }
+            tr:nth-child(odd) {
+                background-color: #e4c3ad;
             }
         </style>
     </head>
@@ -21,19 +42,16 @@
         </header>
 
         <nav class="border">
-            <hr style="border: thin dotted red;"/>
             <p><a href="projects.html">Projects</a></p>
             <p><a href="contact.html">Contact</a></p>
             <p><a href="testimonials.html">Testimonials</a></p>
-            <hr style="width: 50%; border: 2px solid blueviolet;"/>
         </nav>
 
         <section>
             <article id="about" class="border">
                 <h2><em>About Me</em></h2>
                 <img src="images/portrait.PNG" alt="Portrait of Megan Brennan"/>
-                <p>I am a <span style="background-color: lightblue; border: thin solid darkblue;">
-                    physicist and amateur software developer</span> from St. Cloud, 
+                <p>I am a physicist and amateur software developer from St. Cloud, 
                     Minnesota. I am also interested in data, education, and the 
                     environment. 
                 </p>
@@ -47,31 +65,35 @@
                 <img src="images/beaker.jpg" alt="Graphene solution in beaker"/>
                 <table>
                     <caption>Employment History</caption>
-                    <tr>
-                        <th>Years</th>
-                        <th>Title</th>
-                        <th>Company</th>
-                    </tr>
-                    <tr>
-                        <td>2020-Present</td>
-                        <td>Apprentice</td>
-                        <td>The Software Guild</td>
-                    </tr>
-                    <tr>
-                        <td>2019-2020</td>
-                        <td>Education Fellow</td>
-                        <td>Great Oaks Charter School</td>
-                    </tr>
-                    <tr>
-                        <td>2018</td>
-                        <td>Algorithm Intern</td>
-                        <td>Image Sensing Systems</td>
-                    </tr>
-                    <tr>
-                        <td>2015-2019</td>
-                        <td>Student</td>
-                        <td>Hamline University</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Years</th>
+                            <th>Title</th>
+                            <th>Company</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020-Present</td>
+                            <td>Apprentice</td>
+                            <td>The Software Guild</td>
+                        </tr>
+                        <tr>
+                            <td>2019-2020</td>
+                            <td>Education Fellow</td>
+                            <td>Great Oaks Charter School</td>
+                        </tr>
+                        <tr>
+                            <td>2018</td>
+                            <td>Algorithm Intern</td>
+                            <td>Image Sensing Systems</td>
+                        </tr>
+                        <tr>
+                            <td>2015-2019</td>
+                            <td>Student</td>
+                            <td>Hamline University</td>
+                        </tr>
+                    </tbody>
                 </table>
             </article>
 
@@ -110,8 +132,7 @@
 
         </section>
 
-        <footer style="background-color: fuchsia">
-            <hr/>
+        <footer>
             <p>&copy; 2020 Megan Brennan. All rights reserved.</p>
         </footer>
     </body>
