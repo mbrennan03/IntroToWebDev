@@ -8,6 +8,8 @@ body {
     background-color: #e9f1f7;
     font-family: Arial, Helvetica, sans-serif;
     color: #292f36;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 header, footer {
@@ -26,4 +28,46 @@ nav {
     border-top: 3px dashed #84828f;
     border-bottom: 3px dashed #84828f;
     margin-top: 4px;
+}
+
+.clear-float {
+    clear: both;
+}
+
+article img {
+    float: left;
+}
+
+article {
+    margin-bottom: 16px;
+}
+
+.right-content {
+    float: left;
+}
+
+nav a {
+    background-color: #9c7a97;
+    color: #292f36;
+    padding: 8px;
+    border: thin solid #292f36;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}
+
+nav a:visited {
+    color: #e4c3ad;
+}
+
+nav a:hover {
+    background-color: #e9f1f7;
+    color: #9c7a97;
+}
+
+nav a:active {
+    font-weight: bold;
 }
