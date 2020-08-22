@@ -1,0 +1,39 @@
+/*
+    Name: Megan Brennan
+    Created: August 22, 2020
+    Last updated:
+*/
+
+body {
+    background-color: #f4edea;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #12263a;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #06bcc1;
+    height: 100px;
+    padding: 20px 10px 40px 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav {
+    border-top: 3px solid #12263a;
+    border-bottom: 3px solid #12263a;
+    margin-top: 6px;
+}
+
+nav a {
+    background-color: #06bcc1;
+    color: #12263a;
+    padding: 6px;
+    border: thin solid #12263a;
+    display: block;
+    float: left;
+}
