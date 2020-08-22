@@ -5,14 +5,14 @@ Last Modified: August 22, 2020
 */
 
 body {
-    background-color: #fef9ff;
+    background-color: #e9f1f7;
     font-family: Arial, Helvetica, sans-serif;
-    color: #0d1f2d;
+    color: #292f36;
 }
 
 header, footer {
-    background-color: #5b7d87;
-    color: #fef9ff;
+    background-color: #9c7a97;
+    color: #292f36;
     height: 100px;
     text-align: center;
     padding: 30px 10px 20px 10px;
@@ -23,7 +23,7 @@ h1 {
 }
 
 nav {
-    border-top: 3px dashed #546a7b;
-    border-bottom: 3px dashed #546a7b;
+    border-top: 3px dashed #84828f;
+    border-bottom: 3px dashed #84828f;
     margin-top: 4px;
 }
