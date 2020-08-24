@@ -47,6 +47,10 @@
                 background-color: #fff;
                 resize: none;
             }
+
+            .rqd {
+                font-weight: bold;
+            }
         </style>
     </head>
 
@@ -60,16 +64,18 @@
             <p><a href="index.html">Home</a></p>
             <p><a href="menu.html">Menu</a></p>
             <p><a href="contact.html">Contact</a></p>
+            <div style="clear:both"></div>
         </nav>
 
         <section>
             <form action="submit.html" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br />
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br />
-                <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone"><br />
+                <p>Bold fields are required</p><br />
+                <label for="name" class="rqd">Name:</label>
+                <input type="text" id="name" name="name" required><br />
+                <label for="email" class="rqd">Email:</label>
+                <input type="text" id="email" name="email" required><br />
+                <label for="phone" class="rqd">Phone:</label>
+                <input type="text" id="phone" name="phone" required><br />
 
                 <label for="reason">Reason for Inquiry:</label>
                 <select id="reason" name="reason">
@@ -109,10 +115,8 @@
         </section>
 
         <footer>
-            <hr/>
             <p>222 45th St, St. Cloud MN 56303</p>
             <p>(320) 123-4568</p>
-            <hr/>
         </footer>
     </body>
 </html>
