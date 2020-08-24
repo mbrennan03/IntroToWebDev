@@ -17,6 +17,21 @@
             b {
                 font-size: 1.2em;
             }
+
+            table, th, td {
+                border: 1px solid #12263a;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+
+            table {
+                width: 90%;
+                margin: 20px auto;
+            }
+
+            th, tr:nth-child(even) {
+                background-color: #f4d1ae;
+            }
         </style>
     </head>
 
@@ -72,6 +87,31 @@
                     </div>
                 </div>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.50</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee</td>
+                        <td>$1.75</td>
+                    </tr>
+                    <tr>
+                        <td>Soda</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.50</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <footer>

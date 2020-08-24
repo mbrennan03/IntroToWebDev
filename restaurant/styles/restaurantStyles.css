@@ -32,7 +32,7 @@ nav {
     border-top: 3px solid #12263a;
     border-bottom: 3px solid #12263a;
     margin-top: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
 }
 
 nav .btn {
@@ -49,6 +49,7 @@ nav .btn:visited {
 
 nav .btn:hover {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 nav .btn:active {
