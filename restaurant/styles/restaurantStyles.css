@@ -14,7 +14,7 @@ body {
 
 header, footer {
     background-color: #06bcc1;
-    height: 100px;
+    height: 125px;
     padding: 20px 10px 40px 10px;
 }
 
@@ -25,32 +25,32 @@ footer {
 h1 {
     text-align: center;
     font-size: 2.5em;
+    font-weight: bold;
 }
 
 nav {
     border-top: 3px solid #12263a;
     border-bottom: 3px solid #12263a;
     margin-top: 6px;
+    margin-bottom: 6px;
 }
 
-nav a {
+nav .btn {
     background-color: #06bcc1;
     color: #12263a;
-    padding: 7px;
     border: thin solid #12263a;
-    display: block;
-    float: left;
-    margin: 10px;
+    text-decoration: underline;
+    margin: 6px;
 }
 
-nav a:visited {
+nav .btn:visited {
     color: #f4d1ae;
 }
 
-nav a:hover {
+nav .btn:hover {
     font-weight: bold;
 }
 
-nav a:active {
+nav .btn:active {
     text-decoration: none;
 }
