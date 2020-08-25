@@ -15,11 +15,14 @@ body {
 .jumbotron {
     background-color: #06bcc1;
     padding: 20px 10px 40px 20px;
+    margin-bottom: 0;
 }
 
 footer {
     text-align: center;
     background-color: #06bcc1;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 h1 {
