@@ -1,7 +1,7 @@
 /*
     Name: Megan Brennan
     Created: August 22, 2020
-    Last updated: August 24, 2020
+    Last updated: August 25, 2020
 */
 
 body {
@@ -12,46 +12,40 @@ body {
     margin: 0 auto;
 }
 
-header, footer {
+.jumbotron {
     background-color: #06bcc1;
-    height: 125px;
-    padding: 20px 10px 40px 10px;
+    padding: 20px 10px 40px 20px;
 }
 
 footer {
     text-align: center;
+    background-color: #06bcc1;
 }
 
 h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.0em;
     font-weight: bold;
 }
 
-nav {
-    border-top: 3px solid #12263a;
-    border-bottom: 3px solid #12263a;
-    margin-top: 6px;
+.nav.nav-tabs {
     margin-bottom: 20px;
 }
 
-nav .btn {
-    background-color: #06bcc1;
+.nav-link {
     color: #12263a;
-    border: thin solid #12263a;
     text-decoration: underline;
-    margin: 6px;
 }
 
-nav .btn:visited {
-    color: #f4d1ae;
+.nav-link:visited {
+    color: #06bcc1;
 }
 
-nav .btn:hover {
+.nav-link:hover {
     font-weight: bold;
     text-decoration: underline;
 }
 
-nav .btn:active {
+.nav-link:active {
     text-decoration: none;
 }
