@@ -30,8 +30,8 @@ function validateItems() {
         document.forms["submitRequest"]["email"].focus();
         return false;
     }
-    if (phone == "") {
-        alert("Please enter your phone number.");
+    if (phone.length != 10 || isNaN(phone)) {
+        alert("Please enter your 10-digit phone number with no other characters.");
         document.forms["submitRequest"]["phone"].parentElement.className = "form-group has-error";
         document.forms["submitRequest"]["phone"].focus();
         return false;
