@@ -5,11 +5,16 @@
 */
 
 body {
-    background-color: #f4edea;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #12263a;
     max-width: 900px;
     margin: 0 auto;
+}
+
+section {
+    background-color: #f4edea;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .jumbotron {
@@ -29,10 +34,6 @@ h1 {
     text-align: center;
     font-size: 3.0em;
     font-weight: bold;
-}
-
-.nav.nav-tabs {
-    margin-bottom: 20px;
 }
 
 .nav-link {

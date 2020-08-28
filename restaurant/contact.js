@@ -20,19 +20,19 @@ function validateItems() {
 
     if (name == "") {
         alert("Please enter your name.");
-        document.forms["submitRequest"]["name"].parentElement.className = "form-group has-error";
+        document.forms["submitRequest"]["name"].parentElement.parentElement.className = "form-group row has-error";
         document.forms["submitRequest"]["name"].focus();
         return false;
     }
     if (email == "") {
         alert("Please enter your email.");
-        document.forms["submitRequest"]["email"].parentElement.className = "form-group has-error";
+        document.forms["submitRequest"]["email"].parentElement.parentElement.className = "form-group row has-error";
         document.forms["submitRequest"]["email"].focus();
         return false;
     }
     if (phone.length != 10 || isNaN(phone)) {
         alert("Please enter your 10-digit phone number with no other characters.");
-        document.forms["submitRequest"]["phone"].parentElement.className = "form-group has-error";
+        document.forms["submitRequest"]["phone"].parentElement.parentElement.className = "form-group row has-error";
         document.forms["submitRequest"]["phone"].focus();
         return false;
     }
