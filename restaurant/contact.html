@@ -2,7 +2,7 @@
 <!--
     Name: Megan Brennan
     Date Created: August 21, 2020
-    Last Updated: August 26, 2020
+    Last Updated: August 28, 2020
 -->
 <html lang="en">
     <head>
@@ -15,12 +15,8 @@
                 font-size: 1.1em;
             }
 
-            input[type=text], input[type=email], select {
+            input[type=text], input[type=email], select, textarea {
                 max-width: 400px;
-            }
-
-            textarea {
-                max-width: 800px;
             }
 
             .btn-primary {
@@ -42,13 +38,19 @@
             .form-check, button {
                 margin-bottom: 20px;
             }
+
+            .col-form-label {
+                text-align: right;
+            }
         </style>
     </head>
 
     <body>
         <div class="jumbotron">
             <h4>Contact Us</h4>
+            <hr/>
             <h1>Megan's Restaurant</h1>
+            <hr/>
             <h6>New location opening soon!</h6>
         </div>
 
@@ -75,67 +77,93 @@
 
         <form name="submitRequest" onsubmit="return validateItems();">
             <p>Bold fields are required</p>
-            <div class="form-group">
-                <label for="name" class="rqd">Name:</label>
-                <input type="text" class="form-control" id="name">
+
+            <div class="form-group row">
+                <label for="name" class="rqd col-sm-4 col-form-label">Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="name">
+                </div>
             </div>
-            <div class="form-group">   
-                <label for="email" class="rqd">Email:</label>
-                <input type="email" class="form-control" id="email">
+
+            <div class="form-group row">   
+                <label for="email" class="rqd col-sm-4 col-form-label">Email:</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="email">
+                </div>
             </div> 
-            <div class="form-group">
-                <label for="phone" class="rqd">Phone:</label>
-                <input type="text" class="form-control" id="phone">
+
+            <div class="form-group row">
+                <label for="phone" class="rqd col-sm-4 col-form-label">Phone:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="phone">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="reason">Reason for Inquiry:</label>
-                <select class="form-control" name="reason">
-                    <option value="catering" selected>Catering</option>
-                    <option value="party">Private Party</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
-                </select>
+            <div class="form-group row">
+                <label for="reason" class="col-sm-4 col-form-label">Reason for Inquiry:</label>
+                <div class="col-sm-8">
+                    <select class="form-control" name="reason">
+                        <option value="catering" selected>Catering</option>
+                        <option value="party">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="info">Additional Information:</label>
-                <textarea id="info" class="form-control"></textarea>
+            <div class="form-group row">
+                <label for="info" class="col-sm-4 col-form-label">Additional Information:</label>
+                <div class="col-sm-8">
+                    <textarea id="info" class="form-control"></textarea>
+                </div>
             </div>
 
-            <label>Have you been to the restaurant?</label><br />
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" id="choice1" name="visited" value="yes">
-                <label class="form-check-label" for="choice1">Yes</label>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Have you been to the restaurant?</label>
+                <div class="col-sm-8">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="choice1" name="visited" value="yes">
+                        <label class="form-check-label" for="choice1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="choice2" name="visited" value="no">
+                        <label class="form-check-label" for="choice2">No</label>
+                    </div>
+                </div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" id="choice2" name="visited" value="no">
-                <label class="form-check-label" for="choice2">No</label>
-            </div><br />
 
-            <label>Best days to contact you:</label><br />
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="monday" value="monday">
-                <label class="form-check-label" for="monday">M</label>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Best days to contact you:</label>
+                <div class="col-sm-8">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="monday" value="monday">
+                        <label class="form-check-label" for="monday">M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="tuesday" value="tuesday">
+                        <label class="form-check-label" for="tuesday">T</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="wednesday" value="wednesday">
+                        <label class="form-check-label" for="wednesday">W</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="thursday" value="thursday">
+                        <label class="form-check-label" for="thursday">R</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="friday" value="friday">
+                        <label class="form-check-label" for="friday">F</label>
+                    </div>
+                </div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="tuesday" value="tuesday">
-                <label class="form-check-label" for="tuesday">T</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="wednesday" value="wednesday">
-                <label class="form-check-label" for="wednesday">W</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="thursday" value="thursday">
-                <label class="form-check-label" for="thursday">R</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="friday" value="friday">
-                <label class="form-check-label" for="friday">F</label>
-            </div><br />
 
-            <button type="submit" class="btn btn-primary">Send Request</button>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8">
+                    <button type="submit" class="btn btn-primary">Send Request</button>
+                </div>
+            </div>
         </form>
 
         <footer>
