@@ -12,7 +12,7 @@ function validateItems() {
         alert("Please enter your email.");
         document.forms["submitRequest"]["email"].focus();
         return false;
-    }
+    } // Bootstrap will verify if email is in a valid format with @ symbol
     if (phone.length != 10 || isNaN(phone)) {
         alert("Please enter your 10-digit phone number with no other characters.");
         document.forms["submitRequest"]["phone"].focus();
