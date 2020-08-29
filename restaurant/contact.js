@@ -22,6 +22,13 @@ function validateItems() {
         alert("Please select if you have visited the restaurant before.")
         return false;
     }
+    if (!document.getElementById("monday").checked && !document.getElementById("tuesday").checked &&
+        !document.getElementById("wednesday").checked && !document.getElementById("thursday").checked &&
+        !document.getElementById("friday").checked) {
+        alert("Please select at least one day we can contact you.")
+        return false;
+    }
+    // No need to validate the reason for inquiry since it has a default option
 
     alert("Information submitted successfully.")
     return true;
