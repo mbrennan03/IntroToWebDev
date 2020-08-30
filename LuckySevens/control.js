@@ -1,7 +1,7 @@
 var startingBet;
-var totalRolls = 0;
-var highestAmount = 0;
-var rollCount = 0;
+var totalRolls;
+var highestAmount;
+var rollCount;
 
 function verifyBet() {
     var amount = document.forms["sevens"]["bet"].value;
@@ -11,7 +11,9 @@ function verifyBet() {
         return false;
     }
     startingBet = amount;
+    totalRolls = 0;
     highestAmount = amount;
+    rollCount = 0;
     playGame(amount);
     document.getElementById("results").style.display = "block";
     document.getElementById("submitButton").innerText = "Play Again";
