@@ -5,7 +5,7 @@ var rollCount;
 
 function verifyBet() {
     var amount = document.forms["sevens"]["bet"].value;
-    if (amount == "" || isNaN(amount) || amount <= 0) {
+    if (amount == "" || amount <= 0) {
         alert("Starting bet must be a positive number.");
         document.forms["sevens"]["bet"].focus();
         return false;
